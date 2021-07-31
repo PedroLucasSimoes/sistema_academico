@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></link>
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" name="nome" required="true" autocomplete="off">
+                <span></span>
+                <label>Nome</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="text" name="cpf" required="true" autocomplete="off">
+                <span></span>
+                <label>CPF</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" name="senha" required="true" autocomplete="off">
+                <span></span>
+                <label>Senha</label>
+            </div>
+
+            <input type="submit" value="Login" onclick="verifyLogin()">
+            <br>
+            <br>
+            <input type ="button" value="Voltar" onclick="location.href='index.html'">
+
+            <input type="button" value="Limpar">
+            
+            
+            <div class="signup_link">
+                Não tem conta? <a href="index.html">Registre-se</a>
+            </div>
+        </form>
+    </div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+
+</script>
+
+</body>
+</html>
