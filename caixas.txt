@@ -1,6 +1,0 @@
-Nome 
-CPF
-Endereço
-CEP
-Telefone
-Senha
