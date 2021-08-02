@@ -22,7 +22,8 @@
 <table>
     <tr>
         <th>Id</th>
-        <th>Username</th>
+        <th>Nome</th>
+        <th>Curso</th>
         <th>CPF</th>
         <th>Endereço</th>
         <th>CEP</th>
@@ -39,7 +40,7 @@
 
     if ($result -> num_rows > 0) {
         while($row = $result-> fetch_assoc()) {
-            echo "<tr><td>". $row["id"]. "</td><td>". $row["nome"]. "</td><td>" .$row["cpf"]. "</td><td>".$row["endereço"]. "</td><td>".$row["cep"]. "</td><td>".$row["telefone"]."</td></tr>";
+            echo "<tr><td>". $row["id"]. "</td><td>". $row["nome"]."</td><td>". $row["curso"] ."</td><td>" .$row["cpf"]. "</td><td>".$row["endereço"]. "</td><td>".$row["cep"]. "</td><td>".$row["telefone"]."</td></tr>";
         }
         echo "</table>";
     }
