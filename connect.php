@@ -11,11 +11,13 @@
 
 <?php
 
-$connection = mysqli_connect("localhost", "root", "123");
-if (!$connection) {
+$conn = mysqli_connect("localhost", "root", "123");
+if (!$conn) {
 die("Não foi possível conectar ao banco de dados.
         Erro detectado:" . mysqli_error());
 }
+
+mysqli_set_charset($conn, "utf8");
 
 ?>
 </body>

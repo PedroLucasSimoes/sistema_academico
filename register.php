@@ -21,15 +21,7 @@ echo $senha;
 $postsenha = base64_encode("$senha");
 echo $senha;
 
-$conn = mysqli_connect("localhost", "root", "123");
-if (!$conn) {
-die("Não foi possível conectar ao banco de dados.
-        Erro detectado:" . mysqli_error());
-}
-
-mysqli_set_charset($conn, "utf8");
-
-echo "Conectado com sucesso";
+require('connect.php');
 
 mysqli_select_db($conn, "sis_academico");
 

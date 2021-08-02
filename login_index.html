@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"></link>
-    <title>Document</title>
+    <link rel="stylesheet" href="forms.css"></link>
+    <title>Login</title>
 </head>
 <body>
+
+    <div class="header">
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="access.php">Alunos</a></li>
+            <li><a href="register_index.html">Registre-se</a></li>
+            <li><a class="active" href="login_index.html">Login</a></li>
+            <li style="float:right"><a href="#sobre">Sobre</a></li>
+        </ul>
+    </div>
+
     <div class="center">
         <h1>Login</h1>
-        <form method="post">
+        <form method="post" action="login.php">
             <div class="txt_field">
                 <input type="text" name="nome" required="true" autocomplete="off">
                 <span></span>
@@ -34,7 +45,7 @@
             <br>
             <input type ="button" value="Voltar" onclick="location.href='index.html'">
 
-            <input type="button" value="Limpar">
+            <input type="reset" value="Limpar">
             
             
             <div class="signup_link">

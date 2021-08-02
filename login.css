@@ -1,0 +1,48 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #052f4b;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+
+th {
+    background-color: #588c7e;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

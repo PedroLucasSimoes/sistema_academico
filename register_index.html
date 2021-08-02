@@ -4,51 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"></link>
-    <title>Document</title>
+    <link rel="stylesheet" href="forms.css"></link>
+    <title>Registro</title>
 </head>
 <body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="access.php">Alunos</a></li>
+            <li><a class="active" href="register_index.html">Registre-se</a></li>
+            <li><a href="login_index.html">Login</a></li>
+            <li style="float:right"><a href="#sobre">Sobre</a></li>
+        </ul>
+    </div>
+
     <div class="center">
         <h1>Registro</h1>
         <form method="post" action="register.php">
             <div class="txt_field">
-                <input type="text" name="nome" required="true">
+                <input type="text" name="nome" required="true" autocomplete="off">
                 <span></span>
                 <label>Nome</label>
             </div>
             
             <div class="txt_field">
-                <input type="text" name="cpf" required="true">
+                <input type="text" name="cpf" required="true" autocomplete="off">
                 <span></span>
                 <label>CPF</label>
             </div>
 
             <div class="txt_field">
-                <input type="text" name="endereço" required="true">
+                <input type="text" name="endereço" required="true" autocomplete="off">
                 <span></span>
                 <label>Endereço</label>
             </div>
 
            <div class="txt_field">
-                <input type="text" name="cep" required="true">
+                <input type="text" name="cep" required="true" autocomplete="off">
                 <span></span>
                 <label>CEP</label>
             </div>
 
             <div class="txt_field">
-                <input type="text" name="telefone" required="true">
+                <input type="text" name="telefone" required="true" autocomplete="off">
                 <span></span>
                 <label>Telefone</label>
             </div>
 
             <div class="txt_field">
-                <input type="password" name="senha" required="true">
+                <input type="password" name="senha" required="true" autocomplete="off">
                 <span></span>
                 <label>Senha</label>
             </div>
 
             <input type="submit" value="Registrar-se" onclick="verifyLogin()">
-			</div>
+			<br> <br>
+            </div>
+            
         </form>
     </div>
 

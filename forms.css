@@ -1,3 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+
 body {
     position: relative;
     margin: 0;
@@ -6,21 +39,21 @@ body {
     background: linear-gradient(120deg, #052f4b, #addfdc);
     height: 100vh;
     overflow: hidden;
-    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .center {
+    border-top: 50px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     width: 400px;
     background: white;
     border-radius: 10px;
     transition: all .5s;
-    height: 90%;
+    height: auto;
     flex: 1 1 auto;
 }
 
@@ -109,7 +142,8 @@ form .txt_field {
     background: linear-gradient(120deg, #addfdc, #052f4b );
 }
 
-.center input[type=button] {
+.center input[type=button],
+.center input[type=reset] {
     border-radius: 15px;
     margin: auto;
     margin-left: 7px;
@@ -129,14 +163,3 @@ form .txt_field {
     margin-bottom: 15px;
 }
 
-footer {
-    margin-top: auto;
-    position: absolute;
-    bottom: 0;
-    background-color: blue;
-    color: #FFF;
-    width: 100%;
-    height: 10px;    
-    text-align: center;
-    line-height: 100px;
-}
